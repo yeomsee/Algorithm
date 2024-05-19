@@ -14,6 +14,10 @@ def solution(my_string):
         my_string = my_string.replace(vowel, '')
     return my_string
 
+'''
+    사실 시간 복잡도 측면에서는 차이가 없을 듯..
+'''
+
 # Another Code
 def solution(my_string):
     return "".join([i for i in my_string if not(i in "aeiou")])
