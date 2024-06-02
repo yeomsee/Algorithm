@@ -1,3 +1,4 @@
+# My Code .. 시간복잡도는 꽤 있는 듯
 def solution(n):
     answer = []
     for i in range(1, n+1):
