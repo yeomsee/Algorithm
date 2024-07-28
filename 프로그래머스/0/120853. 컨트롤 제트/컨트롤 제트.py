@@ -7,3 +7,15 @@ def solution(s):
     
     answer = sum([int(num) for num in s])
     return answer
+
+# Another Code .. 스택 이용
+def solution(s):
+    stack = []
+    for a in s.split():
+        if a != 'Z':
+            stack.append(int(a))
+        else:
+            if stack:
+                stack.pop()
+
+    return sum(stack)
