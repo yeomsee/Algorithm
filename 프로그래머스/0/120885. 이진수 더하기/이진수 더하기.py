@@ -11,3 +11,13 @@ def solution(bin1, bin2):
             temp_list[-2-i] = str(int(temp_list[-2-i]) + 1)
     
     return ''.join(temp_list)
+
+# Best Code
+def solution(bin1, bin2):
+    answer = bin(int(bin1,2) + int(bin2,2))[2:]
+    return answer
+
+'''
+    int(value, base)
+    : value를 base진법으로 표현함
+'''
