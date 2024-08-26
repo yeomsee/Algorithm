@@ -7,4 +7,10 @@ def solution(numbers, k):
             return numbers[turn % len(numbers)]
         turn += 2
         
-            
+# Best Code
+def solution(numbers, k):
+    return numbers[2 * (k - 1) % len(numbers)]
+
+'''
+    이게 훨씬 더 직관적인 듯,,
+'''
