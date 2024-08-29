@@ -8,3 +8,13 @@ def solution(balls, share):
     
     answer = get_factorial(balls) / (get_factorial(share) * get_factorial(balls - share))
     return answer
+
+# Another Code
+import math
+
+def solution(balls, share):
+    return math.comb(balls, share)
+
+'''
+    math 라이브러리를 import해서 푸는 경우도 있음!
+'''
