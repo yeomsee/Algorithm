@@ -21,3 +21,13 @@ def solution(numbers):
                 break
     answer = int(answer)
     return answer
+
+# Best Code
+def solution(numbers):
+    for num, eng in enumerate(["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
+        numbers = numbers.replace(eng, str(num))
+    return int(numbers)
+
+'''
+    enumerate와 replace를 이용해서 완전 편하게 풀 수도 있음..!
+'''
