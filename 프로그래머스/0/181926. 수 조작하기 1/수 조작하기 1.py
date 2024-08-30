@@ -4,3 +4,8 @@ def solution(n, control):
     
     answer = n + sum(control_dict[c] for c in control)
     return answer
+
+# Simpler Code
+def solution(n, control):
+    key = dict(zip(['w','s','d','a'], [1,-1,10,-10]))
+    return n + sum([key[c] for c in control])
