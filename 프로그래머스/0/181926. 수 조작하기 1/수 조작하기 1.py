@@ -9,3 +9,7 @@ def solution(n, control):
 def solution(n, control):
     key = dict(zip(['w','s','d','a'], [1,-1,10,-10]))
     return n + sum([key[c] for c in control])
+
+'''
+    zip을 이용하면 조금 더 효율적으로 코딩할 수 있겠다 ㅎㅎ,,
+'''
