@@ -10,3 +10,7 @@ def solution(myString):
             answer += string
             
     return answer
+
+# Best Code
+def solution(myString):
+    return myString.lower().replace('a', 'A')
