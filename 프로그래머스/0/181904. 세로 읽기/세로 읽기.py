@@ -6,3 +6,7 @@ def solution(my_string, m, c):
         answer += temp_string[c-1]
     
     return answer
+
+# Best Code
+def solution(s, m, c):
+    return s[c-1::m]
