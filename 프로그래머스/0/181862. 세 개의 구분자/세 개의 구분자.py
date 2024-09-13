@@ -18,3 +18,13 @@ def solution(my_string):
         answer_list = ["EMPTY"]
         
     return answer_list
+
+# Best Code
+def solution(myStr):
+    answer = [x for x in myStr.replace('a', ' ').replace('b', ' ').replace('c', ' ').split() if x]
+    return answer if answer else ['EMPTY']
+
+'''
+    이외에도 정규표현식을 이용한 방법도 있는데,,,
+    정규표현식 특성상 시간복잡도가 높아서 이용해도 되는지 물어보고 써야할 듯 ㅇㅇ,,
+'''
