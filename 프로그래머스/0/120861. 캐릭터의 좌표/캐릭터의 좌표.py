@@ -22,3 +22,18 @@ def solution(keyinput, board):
                 answer[1] = -y_half
 
     return answer
+
+# Simpler Code
+def solution(keyinput, board):
+    curr = [0, 0]
+    for k in keyinput:
+        if k == 'left':
+            curr[0] = max(curr[0] - 1, -(board[0] // 2))
+        elif k == 'right':
+            curr[0] = min(curr[0] + 1, board[0] // 2)
+        elif k == 'down':
+            curr[1] = max(curr[1] - 1, -(board[1] // 2))
+        else:
+            curr[1] = min(curr[1] + 1, board[1] // 2)
+
+    return curr
