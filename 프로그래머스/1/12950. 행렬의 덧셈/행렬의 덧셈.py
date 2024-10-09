@@ -6,3 +6,12 @@ def solution(arr1, arr2):
         answer.append(temp_list)
         
     return answer
+
+# Best Code
+def sumMatrix(A,B):
+    answer = [[c + d for c, d in zip(a,b)] for a, b in zip(A,B)]
+    return answer
+
+'''
+    사실 이렇게 구현하고 싶었던 거였음 ㅎㅎ,,
+'''
