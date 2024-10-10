@@ -27,3 +27,13 @@ def lcm(a, b):
 def gcdlcm(a, b):
     answer = [gcd(a, b), lcm(a, b)]
     return answer
+
+# 유클리드 호제법을 이용해서 최대공약수, 최소공배수 구하는 다른 코드
+def GCD(x, y):
+    while(x%y != 0 and x != 0):
+        r = x % y
+        x, y = y, r
+    return y
+
+def LCM(x, y):
+    return x * y // GCD(x, y)
