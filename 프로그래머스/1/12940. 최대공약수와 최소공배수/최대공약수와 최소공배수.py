@@ -12,4 +12,18 @@ def solution(n, m):
             gcd = x
             lcm = gcd * (M//x) * (m//x)
             return [gcd, lcm]
-        
+
+# Best Code
+def gcd(a, b):
+    return b if a % b == 0 else gcd(b, a % b)
+
+''' 최대공약수 구하는 법
+    -> 유클리드 호제법 : 두 수의 나머지를 반복적으로 구하면서 나머지가 0이 될 때의 나누는 수가 최대공약수
+'''
+
+def lcm(a, b):
+    return a * b // gcd(a, b)
+
+def gcdlcm(a, b):
+    answer = [gcd(a, b), lcm(a, b)]
+    return answer
