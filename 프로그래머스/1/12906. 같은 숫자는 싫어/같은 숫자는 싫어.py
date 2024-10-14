@@ -7,3 +7,8 @@ def solution(arr):
                 continue
         answer.append(arr[i])
     return answer
+
+# Best Code
+def no_continuous(s):
+    a=[v for i,v in enumerate(s) if s[i-1]!=s[i]]
+    return a
